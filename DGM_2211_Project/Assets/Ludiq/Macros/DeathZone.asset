@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: DeathZone
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-156.1538,"y":-131.9557},"zoom":0.7,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-368.0,"y":-338.0},"guid":"3ca179dd-9dc6-411b-a7f0-4e8060f02254","$version":"A","$type":"Bolt.OnTriggerEnter","$id":"9"},{"chainable":false,"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null,"input":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":146.0,"y":-133.0},"guid":"25f6444d-3d12-4e86-aa7b-998c7ad05342","$version":"A","$type":"Bolt.SetMember","$id":"11"},{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-900.0,"y":-278.0},"guid":"02056963-4e40-43c8-a3d2-89d9857934b1","$version":"A","$type":"Bolt.OnCollisionEnter"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-66.0,"y":-6.0},"guid":"295d6e30-a3fc-4798-8754-c2cf41734517","$version":"A","$type":"Bolt.GetMember","$id":"16"},{"chainable":false,"member":{"name":"Find","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%name":{"$content":"Player","$type":"System.String"}},"position":{"x":-260.0,"y":-140.0},"guid":"47e0db62-fe9f-4c76-a984-1ce986512d6f","$version":"A","$type":"Bolt.InvokeMember","$id":"19"},{"chainable":false,"member":{"name":"Find","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%name":{"$content":"Spawnpoint","$type":"System.String"}},"position":{"x":-279.0,"y":-1.0},"guid":"ce509f88-d6d1-4a74-ba2b-3d9152f4cc20","$version":"A","$type":"Bolt.InvokeMember","$id":"22"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"assign","guid":"b0a35dcd-f817-46c6-96af-ac861eb6d798","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"result","destinationUnit":{"$ref":"16"},"destinationKey":"target","guid":"2aeb6ab0-8f51-4954-87df-1b0692b76405","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"input","guid":"8cad6169-c464-4af0-89aa-3ef9ea12e133","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"result","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"0e773130-c67e-4c55-9579-97306912fa2d","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

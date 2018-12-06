@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Checkpoint
   - Enemy
+  - Death
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -17,9 +19,9 @@ TagManager:
   - 
   - PostProcessing
   - Platform
-  - 
-  - 
-  - 
+  - Player
+  - Projectile
+  - Enemy
   - 
   - 
   - 

@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: KillEnemy
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":295.9899,"y":3.842297},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-203.0,"y":-88.0},"guid":"913355ba-45d4-4788-9baf-28d8e83efc11","$version":"A","$type":"Bolt.OnTriggerEnter","$id":"9"},{"defaultValues":{},"position":{"x":202.0,"y":-130.0},"guid":"32473142-9d56-4155-a94f-a6902d2f13f3","$version":"A","$type":"Bolt.Branch","$id":"11"},{"chainable":false,"member":{"name":"CompareTag","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"target":null,"%tag":{"$content":"Projectile","$type":"System.String"}},"position":{"x":20.0,"y":23.0},"guid":"183f6f07-251e-4ebf-b645-f8fde76623e0","$version":"A","$type":"Bolt.InvokeMember","$id":"13"},{"chainable":false,"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null},"position":{"x":516.0,"y":-157.0},"guid":"2af774f8-b2af-4cb3-a1b6-3c7759cf3ef8","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"defaultValues":{},"position":{"x":229.0,"y":28.0},"guid":"e75ee7eb-3634-4087-a822-2a0049eb74a1","$version":"A","$type":"Bolt.Self"},{"chainable":false,"member":{"name":"Find","parameterTypes":["System.String"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%name":{"$content":"Enemy","$type":"System.String"}},"position":{"x":356.0,"y":-51.0},"guid":"e78538dd-93cc-48b6-997b-6ca1ced5afbb","$version":"A","$type":"Bolt.InvokeMember","$id":"21"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"bc811212-7311-46fa-9e3f-06418dca92b0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"8d3856bd-95bc-4d2a-8f96-31553a78a246","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"result","destinationUnit":{"$ref":"16"},"destinationKey":"%obj","guid":"64955419-727e-46a1-803f-dac0baa1e6cd","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"collider","destinationUnit":{"$ref":"13"},"destinationKey":"target","guid":"835130d2-3679-480a-a7b4-79cc68ebd2fd","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"result","destinationUnit":{"$ref":"11"},"destinationKey":"condition","guid":"44429e31-41f2-4715-b88a-bc85a20acdad","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
